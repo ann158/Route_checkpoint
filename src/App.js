@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import MovieList from "./components/MovieList";
 import Filter from "./components/Filter";
-import MovieDescription from "./components/MovieDescription"; // make sure this file exists
+import MovieDescription from "./components/MovieDescription"; 
 import "./App.css";
 
 const App = () => {
@@ -34,7 +34,7 @@ const App = () => {
       (filterRating === "" || movie.rating >= Number(filterRating))
   );
 
-  // ✅ THIS is where the return should be
+  
   return (
     <Router>
       <div className="app">
